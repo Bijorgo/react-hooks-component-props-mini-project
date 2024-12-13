@@ -4,7 +4,9 @@ export default function ArticleList({posts}){
     return(
             <main>
                 {posts.map( post => (
-                    <Article key={post.id} title={post.title} date={post.date} preview={post.preview}/>
+                    <li key={post.id}>
+                        <Article  title={post.title} date={post.date} preview={post.preview}/>
+                    </li>
                 ))}
             </main>
     )
